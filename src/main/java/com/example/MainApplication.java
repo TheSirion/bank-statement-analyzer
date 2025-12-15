@@ -1,0 +1,16 @@
+package com.example;
+
+import java.io.IOException;
+
+public class MainApplication {
+
+
+    public static void main(String... args) throws IOException {
+        final String fileName = args[0];
+        final BankStatementAnalyzer bankStatementAnalyzer = new BankStatementAnalyzer();
+        final BankStatementParser bankStatementParser = new BankStatementCSVParser();
+        final Exporter exporter = new HtmlExporter();
+
+        bankStatementAnalyzer.analyze(fileName, bankStatementParser, exporter);
+    }
+}

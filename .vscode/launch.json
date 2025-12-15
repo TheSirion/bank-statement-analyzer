@@ -1,0 +1,44 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "MainApplication",
+            "request": "launch",
+            "mainClass": "com.example.MainApplication",
+            "projectName": "bank-statement-analyzer",
+            "args": "transactions.csv"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "BankTransactionAnalyzer",
+            "request": "launch",
+            "mainClass": "com.example.BankTransactionAnalyzer",
+            "projectName": "bank-statement-analyzer",
+            "args": "transactions.csv"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "com.example.Main",
+            "projectName": "bank-statement-analyzer"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Main)",
+            "request": "launch",
+            "mainClass": "com.example.BankTransactionAnalyzer",
+            "args": "transactions.csv"
+        }
+    ]
+}
